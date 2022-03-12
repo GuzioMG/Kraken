@@ -23,6 +23,6 @@ public class Main implements ModInitializer {
 		LOGGER.info("Starting...");
 		BabySquid.register();
 		BabyGlowsquid.register();
-		LOGGER.info("Done!")
+		LOGGER.info("Done!");
 	}
 }
