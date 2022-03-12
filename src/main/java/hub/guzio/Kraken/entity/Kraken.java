@@ -8,14 +8,13 @@ public abstract class Kraken extends WaterCreatureEntity{
 
     protected Kraken(EntityType<? extends WaterCreatureEntity> entityType, World world) {
         super(entityType, world);
-        //TODO Auto-generated constructor stub
     }
 
     public static void register() throws UnsupportedOperationException{
         throw new UnsupportedOperationException("This method may only be accessed from a class that extends this class");
     }
     
-    public static EntityType<? extends WaterCreatureEntity> getSelf() throws UnsupportedOperationException{
+    public static EntityType<? extends Kraken> getSelf() throws UnsupportedOperationException{
         throw new UnsupportedOperationException("This method may only be accessed from a class that extends this class");
     }
 }

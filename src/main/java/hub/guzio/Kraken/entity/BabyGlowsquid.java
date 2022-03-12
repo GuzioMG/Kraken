@@ -10,24 +10,24 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 
-public class BabySquid extends Kraken {
+public class BabyGlowsquid extends Kraken {
 
     @SuppressWarnings("unchecked")
-    public static final EntityType<BabySquid> self = (EntityType<BabySquid>) getSelf();
+    public static final EntityType<BabyGlowsquid> self = (EntityType<BabyGlowsquid>) getSelf();
 
-    public BabySquid(EntityType<? extends Kraken> entityType, World world) {
+    public BabyGlowsquid(EntityType<? extends Kraken> entityType, World world) {
         super(entityType, world);
     }
 
     public static void register() {
-        FabricDefaultAttributeRegistry.register(self, BabySquid.createMobAttributes());        
+        FabricDefaultAttributeRegistry.register(self, BabyGlowsquid.createMobAttributes());        
     }
     
     public static EntityType<? extends Kraken> getSelf(){
         return Registry.register(Registry.ENTITY_TYPE,
             new Identifier(Main.ID, "squid"),
             FabricEntityTypeBuilder
-                .create(SpawnGroup.WATER_AMBIENT, BabySquid::new)
+                .create(SpawnGroup.WATER_AMBIENT, BabyGlowsquid::new)
                 .dimensions(EntityDimensions.fixed(1, 1))
             .build()
         );

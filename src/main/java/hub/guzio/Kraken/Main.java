@@ -4,6 +4,9 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import hub.guzio.Kraken.entity.BabyGlowsquid;
+import hub.guzio.Kraken.entity.BabySquid;
+
 public class Main implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
@@ -17,6 +20,9 @@ public class Main implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello, World!");
+		LOGGER.info("Starting...");
+		BabySquid.register();
+		BabyGlowsquid.register();
+		LOGGER.info("Done!")
 	}
 }
