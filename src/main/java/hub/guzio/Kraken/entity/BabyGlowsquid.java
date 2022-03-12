@@ -25,7 +25,7 @@ public class BabyGlowsquid extends Kraken {
     
     public static EntityType<? extends Kraken> getSelf(){
         return Registry.register(Registry.ENTITY_TYPE,
-            new Identifier(Main.ID, "squid"),
+            new Identifier(Main.ID, "glowsquid"),
             FabricEntityTypeBuilder
                 .create(SpawnGroup.WATER_AMBIENT, BabyGlowsquid::new)
                 .dimensions(EntityDimensions.fixed(1, 1))
