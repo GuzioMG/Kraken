@@ -14,4 +14,4 @@ It's 21:22. I **must** get the mod done my midnight.
 
 _It's supposed to be a birthday present for my friend, but I forogt..._
 
-I'll do something about it later - if I don't forget.
+I'll add something to it later - if I don't abandon this project after I'm done.
