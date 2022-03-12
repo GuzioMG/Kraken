@@ -12,6 +12,6 @@ _Yes, that means you can use it in modpacks_
 
 It's 21:22. I **must** get the mod done my midnight.
 
-_It's supposed to be a birthday present for my friend, but I forogt..._
+_It's supposed to be a birthday present for my friend, but I forgot..._
 
 I'll add something to it later - if I don't abandon this project after I'm done.
