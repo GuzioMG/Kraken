@@ -1,38 +1,33 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
-  "version": "${version}",
+  "id": "kraken",
+  "version": "0.1",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Kraken",
+  "description": "A simple Minecraft mod that adds baby squids/glowsquids",
   "authors": [
-    "Me!"
+    "Guzio"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "todo://modrinth",
+    "sources": "https://github.com/GuzioMG/Kraken"
   },
 
-  "license": "CC0-1.0",
+  "license": "GPL-2",
   "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "hub.guzio.Kraken.Main"
     ]
   },
-  "mixins": [
-    "modid.mixins.json"
-  ],
 
+  
   "depends": {
     "fabricloader": ">=0.13.3",
     "fabric": "*",
     "minecraft": "1.18.x",
     "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
