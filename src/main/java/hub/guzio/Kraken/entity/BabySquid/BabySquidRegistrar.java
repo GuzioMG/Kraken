@@ -1,6 +1,8 @@
 package hub.guzio.Kraken.entity.BabySquid;
 
 import hub.guzio.Kraken.entity._shared.Registrar;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
@@ -31,6 +33,7 @@ public class BabySquidRegistrar extends Registrar<BabySquidEntity>{
     }
 
     @Override
+    @Environment(EnvType.CLIENT)
     public void registerClient() {
 
     }
