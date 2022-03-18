@@ -10,7 +10,7 @@ public abstract class Kraken extends WaterCreatureEntity{
         super(entityType, world);
     }
 
-    public static void register() throws UnsupportedOperationException{
+    public static void register(boolean client) throws UnsupportedOperationException{
         throw new UnsupportedOperationException("This method may only be accessed from a class that extends this class");
     }
     

@@ -1,6 +1,6 @@
 package hub.guzio.Kraken.entity;
 
-import hub.guzio.Kraken.Main;
+import hub.guzio.Kraken.launch.Main;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
@@ -14,18 +14,24 @@ public class BabyGlowsquid extends Kraken {
 
     @SuppressWarnings("unchecked")
     public static final EntityType<BabyGlowsquid> self = (EntityType<BabyGlowsquid>) getSelf();
+    public static final Identifier ID = new Identifier(Main.ID, "glowsquid");
 
     public BabyGlowsquid(EntityType<? extends Kraken> entityType, World world) {
         super(entityType, world);
     }
 
-    public static void register() {
+    public static void register(boolean client) {
+
+        if(client) {
+
+            return;
+        }
+
         FabricDefaultAttributeRegistry.register(self, BabyGlowsquid.createMobAttributes());        
     }
     
     public static EntityType<? extends Kraken> getSelf(){
-        return Registry.register(Registry.ENTITY_TYPE,
-            new Identifier(Main.ID, "glowsquid"),
+        return Registry.register(Registry.ENTITY_TYPE, ID,
             FabricEntityTypeBuilder
                 .create(SpawnGroup.WATER_AMBIENT, BabyGlowsquid::new)
                 .dimensions(EntityDimensions.fixed(1, 1))

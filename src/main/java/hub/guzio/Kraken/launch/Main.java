@@ -1,9 +1,8 @@
-package hub.guzio.Kraken;
+package hub.guzio.Kraken.launch;
 
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import hub.guzio.Kraken.entity.BabyGlowsquid;
 import hub.guzio.Kraken.entity.BabySquid;
 
@@ -21,8 +20,8 @@ public class Main implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Starting...");
-		BabySquid.register();
-		BabyGlowsquid.register();
+		BabySquid.register(false);
+		BabyGlowsquid.register(false);
 		LOGGER.info("Done!");
 	}
 }

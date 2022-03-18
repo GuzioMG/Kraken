@@ -19,7 +19,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "hub.guzio.Kraken.Main"
+      "hub.guzio.Kraken.launch.Main"
+    ],
+    "client": [
+      "hub.guzio.Kraken.launch.Client"
     ]
   },
 
