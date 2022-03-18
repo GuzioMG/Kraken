@@ -3,8 +3,8 @@ package hub.guzio.Kraken.launch;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import hub.guzio.Kraken.entity.BabyGlowsquid;
-import hub.guzio.Kraken.entity.BabySquid;
+import hub.guzio.Kraken.entity.BabyGlowsquid.BabyGlowsquidRegistrar;
+import hub.guzio.Kraken.entity.BabySquid.BabySquidRegistrar;
 
 public class Main implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -13,6 +13,9 @@ public class Main implements ModInitializer {
 	public static final String ID = "kraken";
 	public static final Logger LOGGER = LoggerFactory.getLogger(ID);
 
+	public static final BabySquidRegistrar babySquidEntity = new BabySquidRegistrar();
+	public static final BabyGlowsquidRegistrar babyGlowsquidEntity = new BabyGlowsquidRegistrar();
+
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -20,8 +23,8 @@ public class Main implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Starting...");
-		BabySquid.register(false);
-		BabyGlowsquid.register(false);
+		babySquidEntity.register();
+		babyGlowsquidEntity.register();
 		LOGGER.info("Done!");
 	}
 }

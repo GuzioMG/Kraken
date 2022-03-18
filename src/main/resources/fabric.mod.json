@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "kraken",
-  "version": "0.6",
+  "version": "0.10",
 
   "name": "Kraken",
   "description": "A simple Minecraft mod that adds baby squids/glowsquids",
