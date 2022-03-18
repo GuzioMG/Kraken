@@ -13,7 +13,7 @@ public class BabyGlowsquidR extends MobEntityRenderer<BabyGlowsquid, ModelBase> 
     public static final EntityModelLayer model = new EntityModelLayer(BabyGlowsquid.ID, "main");
 
     public BabyGlowsquidR(EntityRendererFactory.Context context) {
-        super(context, new ModelBase(context.getPart(model), 0.5f);
+        super(context, new ModelBase(context.getPart(model), 0.5f));
     }
  
     @Override
