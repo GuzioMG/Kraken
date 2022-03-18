@@ -25,6 +25,7 @@ public class Main implements ModInitializer {
 		LOGGER.info("Starting...");
 		babySquidEntity.register();
 		babyGlowsquidEntity.register();
+
 		LOGGER.info("Done!");
 	}
 }
