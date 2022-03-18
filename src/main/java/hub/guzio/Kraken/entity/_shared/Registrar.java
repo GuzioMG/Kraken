@@ -17,7 +17,7 @@ public abstract class Registrar<T extends SquidEntity>{
         return ID;
     }
 
-    protected abstract void register();
-    protected abstract void registerClient();
-    protected abstract EntityType<? extends T> getSelf();
+    public abstract void register();
+    public abstract void registerClient();
+    public abstract EntityType<? extends T> getSelf();
 }
