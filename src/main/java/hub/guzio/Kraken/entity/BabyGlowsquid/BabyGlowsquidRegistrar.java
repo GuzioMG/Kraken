@@ -3,7 +3,6 @@ package hub.guzio.Kraken.entity.BabyGlowsquid;
 import hub.guzio.Kraken.entity._shared.Registrar;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
@@ -36,9 +35,7 @@ public class BabyGlowsquidRegistrar extends Registrar<BabyGlowsquidEntity>{
     @Override
     @Environment(EnvType.CLIENT)
     public void registerClient() {
-        EntityRendererRegistry.register(self, (context) -> {
-            return new BrokenGlowsquidRenderer(context);
-        });
+        
     }
 
     @Override
